@@ -9,7 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ExtratoComponent implements OnInit {
 
   //Transferencia recebida vai ser enviada para o html
-  @Input() transferencia: any;
+  @Input() transferencias: any[];
 
   constructor() { }
 

@@ -1,3 +1,7 @@
 <!--Interpolando o valores-->
-<p>Valor: {{transferencia?.valor}}</p>
-<p>Destino: {{transferencia?.destino}}</p>
+<!--For em uma lista-->
+<div *ngFor="let transferencia of transferencias">
+  <p>Data: {{ transferencia?.data }}</p>
+  <p>Valor: {{ transferencia?.valor }}</p>
+  <p>Destino: {{ transferencia?.destino }}</p>
+</div>
