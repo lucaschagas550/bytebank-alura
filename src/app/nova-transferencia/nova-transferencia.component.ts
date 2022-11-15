@@ -17,5 +17,12 @@ export class NovaTransferenciaComponent{
 
     const valorEmitir = {valor: this.valor, destino: this.destino}; //criando um objeto para receber o valor e o destino
     this.aoTransferir.emit(valorEmitir);
+
+    this.limparCampos();
+  }
+
+  limparCampos(){
+    this.valor = 0;
+    this.destino = 0;
   }
 }

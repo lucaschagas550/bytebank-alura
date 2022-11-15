@@ -1,2 +1,6 @@
 <!--Recebe o event gerado pelo componente da nova transferencia-->
 <app-nova-transferencia (aoTransferir)="transferir($event)"></app-nova-transferencia>
+
+<!--Interpolando o valores-->
+<p>Valor: {{transferencia?.valor}}</p>
+<p>Destino: {{transferencia?.destino}}</p>
