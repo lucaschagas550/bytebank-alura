@@ -7,8 +7,11 @@ import { Component } from "@angular/core";
 })
 
 export class NovaTransferenciaComponent{
+  valor: number;
+  destino: number;
 
   transferir(){
-    console.log('Solicitada nova transferência');
+    console.log('Solicitada nova transferência valor: ' + this.valor +
+     ' para o destino: ' + this.destino);
   }
 }
