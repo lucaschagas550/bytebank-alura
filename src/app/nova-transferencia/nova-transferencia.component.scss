@@ -5,6 +5,7 @@
   border-radius: 4px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   &__titulo { //forumulario__titulo
+    word-break: break-word;
     text-transform: capitalize;
     color: var(--primary);
   }
