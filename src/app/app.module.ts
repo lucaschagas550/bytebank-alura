@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
+import { ExtratoComponent } from './extrato/extrato.component';
 
 //Index Html => AppComponent => AppModule
 //Declarar novos componentes
@@ -11,6 +12,7 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     NovaTransferenciaComponent,
+    ExtratoComponent,
   ],
   imports: [
     BrowserModule,
