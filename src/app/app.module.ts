@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
 
 //Index Html => AppComponent => AppModule
 //Declarar novos componentes
@@ -12,7 +13,8 @@ import { AppComponent } from './app.component';
     NovaTransferenciaComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule //Modulo de formulario, autoimport por causa das extenções instaladas
   ],
   providers: [],
   bootstrap: [AppComponent]

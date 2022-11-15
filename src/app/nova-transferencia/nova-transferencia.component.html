@@ -1,7 +1,7 @@
 <!--Css aplicado atraves do 'class'-->
 <section class="container">
 
-  <form class="formulario">
+  <form class="formulario" (ngSubmit)="transferir()"> <!--Quando clicar no botão eh disparado o evento de submit do formulario-->
     <h2 class="formulario__titulo">Nova Tranferência</h2>
 
     <div class="form-field">
@@ -15,7 +15,7 @@
     </div>
 
     <div class="botao-wrapper">
-      <button class="botao">Transferir</button>
+      <button class="botao" type="submit">Transferir</button>
     </div>
 
   </form>
