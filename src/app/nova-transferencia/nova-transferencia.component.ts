@@ -7,7 +7,7 @@ import { Component, EventEmitter, Output } from "@angular/core";
 })
 
 export class NovaTransferenciaComponent{
-    @Output() aoTransferir = new EventEmitter<any>(); //evento para saida de dados
+  @Output() aoTransferir = new EventEmitter<any>(); //evento para saida de dados
 
   valor: number;
   destino: number;
