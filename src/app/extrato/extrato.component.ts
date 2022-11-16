@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { TransferenciaService } from '../services/transferencia.service';
 
 
 @Component({
@@ -9,11 +10,12 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ExtratoComponent implements OnInit {
 
   //Transferencia recebida vai ser enviada para o html
-  @Input() transferencias: any[];
+  transferencias: any[];
 
-  constructor() { }
+  constructor(private service: TransferenciaService) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { //Eh quando for inicializado
+    this.transferencias = this.service.transferencias;
   }
 
 }
