@@ -1,1 +1,8 @@
-<router-outlet></router-outlet>
+<header>
+  <a routerLink="extrato">Bytebank</a>
+  <a routerLink="nova-transferencia" routerLinkActive="ativo">Nova Transferencia</a>
+  <!--RouterlinkActive permite enviar um css app.component.scss, dessa forma eh possivel esconder o link quando estiver na tela de transferencia-->
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>
