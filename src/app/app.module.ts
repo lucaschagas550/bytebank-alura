@@ -1,3 +1,4 @@
+import { AppRountingModule } from './app-routing.module';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NovaTransferenciaComponent } from './nova-transferencia/nova-transferencia.component';
 import { DEFAULT_CURRENCY_CODE, LOCALE_ID, NgModule } from '@angular/core';
@@ -23,7 +24,8 @@ registerLocaleData(localePt, 'pt');
   imports: [
     BrowserModule,
     FormsModule, //Modulo de formulario, autoimport por causa das extenções instaladas
-    HttpClientModule // Contem modulo HttpClient
+    HttpClientModule, // Contem modulo HttpClient
+    AppRountingModule // Contem as rotas da aplicacao
   ],
   providers: [
     {provide: LOCALE_ID, useValue: 'pt-br'}, // Hora padrao para o aplicativo
